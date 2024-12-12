@@ -1,179 +1,267 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="author" content="Sebastião Moura">
-		<title>Sebastião Moura</title>
-		<link rel="icon" href="images/delphi-logo-128.webp">
-		<link rel="stylesheet" href="styles/main.css">
-	</head>
-    <body>
-		<header>
-            <h1>>Sebastião Moura<span class="blinking-text">_</span></h1>
-			<nav>
-				<ul>
-					<li><a href="#me">Eu</a></li>
-					<li><a href="#academics">Formação</a></li>
-					<li><a href="#portfolio">Portifólio</a></li>
-					<li><a href="#contact">Contato</a></li>
-				</ul>
-            </nav>			
-		</header>
-		
-		<main>
-			<section id="me">
-				<h2>Eu:</h2>
-				<p>Sou um guerreiro da tribo dos teclados, um nômade digital que trocou a lança pela linha de código. Nasci nas profundezas da Amazônia, onde aprendi a domar não só a onça-pintada e o jacaré como hobbie, mas também os mais complexos algoritmos. Enquanto meus ancestrais caçavam com arco e flecha, eu caço bugs e crio softwares que revolucionam o mundo. Sou um programador, mas me chame de xamã da tecnologia. Afinal, quem mais poderia te oferecer um código limpo e eficiente, temperado com um toque de sabedoria ancestral?</p>
-			</section>
-			<hr>
-			
-			<section id="academics">
-				<h2>Formação:</h2>
-				<ul>
-					<li><h3>Educacional:</h3></li>
-					<ul>
-						<li>
-							<p>
-								<strong>Tecnologia em Análise e Desenvolvimento de Sistemas</strong><br>
-								Graduação<br>
-								2024 - Em Curso<br>
-								Centro Universitário Internacional Uninter
-							</p>
-						</li>
-						
-						<li>
-							<p>
-								<strong>Inteligência Artificial para a Sustentabilidade Ambiental</strong><br>
-								Técnico<br>
-								2023 - 2024<br>
-								Instituto Inteligente e Sustentável do Brasil
-							</p>
-						</li>
-						
-						<li>
-							<p>
-								<strong>Programação em Linguagem de Máquinas e Animais Não Humanos</strong><br>
-								Curso Livre (100h)<br>
-								2024<br>
-								Centro Interespecífico de Linguagens de Programação
-							</p>
-						</li>
-						
-						<li>
-							<p>
-								<strong>Análise do Comportamento de Máquinas Inteligentes</strong><br>
-								Curso Livre (160h)<br>
-								2024<br>
-								Confraria de Estudos em Análise do Comportamento de Máquinas Inteligentes
-							</p>
-						</li>
-						
-						<li>
-							<p>
-								<strong>Técnicas de Criação de Histórias Fantásticas</strong><br>
-								Curso Livre (171h)<br>
-								1983<br>
-								Universidade Barão de Münchhausen
-							</p>
-						</li>
-					</ul>
-					<li><h3>Idiomas:</h3></li>
-					<ul>
-						<li>Português nativo</li>
-						<li>Inglês fluente</li>
-						<li>Javanês avançado</li>
-						<li>Quenya avançado</li>
-					</ul>
-				</ul>
-			</section>
-			<hr>
-			
-			<section id="portfolio">
-				<h2>Portifólio:</h2>
-				<ul>
-					<li>
+<!-- 
+	Aluno: Sebastião Arlusson Ramos Moura
+	RU: 4951550
+-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Sebastião Moura">
+	<title>Sebastião Moura</title> <!-- Adiciona título para a página-->
+	<link rel="icon" href="./images/perfil.png" type="image/png"> <!-- Adiciona ícone na aba do navegador-->
+	<link rel="stylesheet" href="styles/main.css"> <!-- Adiciona arquivo de estilização CSS-->
+</head>
+
+<body>
+	<header> <!-- Cria o cabeçalho para página -->
+		<h1>>Sebastião Moura<span class="blinking-text">_</span></h1> <!-- Adiciona título ao cabeçalho da página-->
+		<nav>
+			<ul> <!--Insere uma lista de links (href) pra navegação entre seções no cabeçalho-->
+				<li><a href="#me">Sobre</a></li>
+				<li><a href="#academics">Formação</a></li>
+				<li><a href="#portfolio">Portifólio</a></li>
+				<li><a href="#contact">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main><!--Inicia o conteúdo do site, que vai conter as seções, os ids inseridos nas seções foram usados para estilização personalizada pra cada seção-->
+		<!--Todos os h2 dentro das seções vão inserir seus respectivos títulos-->
+		<section id="me">
+			<h2>Sobre</h2>
+			<p>Sou um guerreiro da tribo dos teclados, um nômade digital que trocou a lança pela linha de código. Nasci
+				nas profundezas da Amazônia, onde aprendi a domar não só a onça-pintada e o jacaré como hobbie, mas
+				também os mais complexos algoritmos. Enquanto meus ancestrais caçavam com arco e flecha, eu caço bugs e
+				crio softwares que revolucionam o mundo. Sou um programador, mas me chame de xamã da tecnologia. Afinal,
+				quem mais poderia te oferecer um código limpo e eficiente, temperado com um toque de sabedoria
+				ancestral?</p> <!--Insere o texto da seção sobre-->
+		</section>
+		<hr> <!--Todos os hr irão inserir uma quebra entre seções-->
+
+<!-- 
+	Aluno: Sebastião Arlusson Ramos Moura
+	RU: 4951550
+-->
+
+		<section id="academics">
+			<h2>Formação</h2>
+			<div class="academic-section">
+				<h3>Educacional</h3> <!--Como a seção formação tem duas partes, Educacional e idiomas, cada h3 vai inserir o subtítulo-->
+				<div class="education-grid"><!--Por questões de estilização uni todos os itens da formação educacional em uma div para alinhá-los lado a lado-->
+					<div class="education-item"><!--Todos os itens tem a mesma estrutura: um parágrafo com o título da formação em destaque, com quebras de linhas a cada informação-->
 						<p>
-							<strong>Toca Top</strong><br>
-							Página web da rádio digital <em>Toca Top</em> desenvolvida utilizando HTML, CSS, Javascript e PWA.<br>
-							<a href="https://tocatop.com.br/" target="_blank">https://tocatop.com.br/</a>
+							<strong>Tecnologia em Análise e Desenvolvimento de Sistemas</strong><br>
+							Graduação<br>
+							2024 - Em Curso<br>
+							Centro Universitário Internacional Uninter
 						</p>
-					</li>
-					
-					<li>
+					</div>
+					<div class="education-item">
 						<p>
-							<strong>ANota</strong><br>
-							Aplicativo web para registrar a lista de compras ou de consumo desenvolvido utilizando HTML, CSS, Javascript, Bootstrap, Boxicons e PWA.<br>
-							<a href="https://sebastiaoarmdev.github.io/anota/" target="_blank">https://sebastiaoarmdev.github.io/anota/</a>
+							<strong>Inteligência Artificial para a Sustentabilidade Ambiental</strong><br>
+							Técnico<br>
+							2023 - 2024<br>
+							Instituto Inteligente e Sustentável do Brasil
 						</p>
-					</li>
-					
-					<li>
+					</div>
+					<div class="education-item">
 						<p>
-							<strong>E o tempo?</strong><br>
-							Aplicativo web para consulta da previsão do tempo consumindo API de terceiros desenvolvido utilizando HTML, CSS, Javascript e Tailwind.<br>
-							<a href="https://sebastiaoarmdev.github.io/eotempo/" target="_blank">https://sebastiaoarmdev.github.io/eotempo/</a>
+							<strong>Programação em Linguagem de Máquinas e Animais Não Humanos</strong><br>
+							Curso Livre (100h)<br>
+							2024<br>
+							Centro Interespecífico de Linguagens de Programação
 						</p>
-					</li>
-					
-					<li>
+					</div>
+					<div class="education-item">
 						<p>
-							<strong>Herança Maldita</strong><br>
-							Jogo web do tipo <em>Visual Novel</em> de terror desenvolvido utilizando HTML, CSS, Javascript e Monogatari.<br>
-							<a href="https://sebastiaoarmdev.github.io/heranca-maldita/" target="_blank">https://sebastiaoarmdev.github.io/heranca-maldita/</a>
+							<strong>Análise do Comportamento de Máquinas Inteligentes</strong><br>
+							Curso Livre (160h)<br>
+							2024<br>
+							Confraria de Estudos em Análise do Comportamento de Máquinas Inteligentes
 						</p>
-					</li>
-					
-					<li>
+					</div>
+
+<!-- 
+	Aluno: Sebastião Arlusson Ramos Moura
+	RU: 4951550
+-->
+
+					<div class="education-item">
 						<p>
-							<strong>CCReader</strong><br>
-							Página web para leitura de perfis da rede social <em>Courious Cat</em> consumindo API externa e desenvolvida utilizando HTML, CSS, Javascript.<br>
-							<a href="https://sebastiaoarmdev.github.io/ccreader/" target="_blank">https://sebastiaoarmdev.github.io/ccreader/</a>
+							<strong>Técnicas de Criação de Histórias Fantásticas</strong><br>
+							Curso Livre (171h)<br>
+							1983<br>
+							Universidade Barão de Münchhausen
 						</p>
-					</li>
-					
-					<li>
-						<p>
-							<strong>Cassandra</strong><br>
-							Aplicativo web para obtenção de respostas para questões da vida e desenvolvido utilizando HTML, CSS, Javascript e PWA.<br>
-							<a href="https://sebastiaoarmdev.github.io/cassandra/" target="_blank">https://sebastiaoarmdev.github.io/cassandra/</a>
-						</p>
-					</li>
-					
-					<li>
-						<p>
-							<strong>Beeri</strong><br>
-							Aplicativo web contador de biritas desenvolvido utilizando HTML, CSS, Javascript e PWA.<br>
-							<a href="https://sebastiaoarmdev.github.io/beeri/" target="_blank">https://sebastiaoarmdev.github.io/beeri/</a>
-						</p>
-					</li>
-				</ul>
-			</section>
-			<hr>
-			
-			<section id="contact">
-				<h2>Contato:</h2>
-				<form>
+					</div>
+				</div>
+				<div class="academic-section"> <!--Aqui usei a mesma classe da seção de formação para utilizar a mesma estilização da seção combinada com a estilização individual das classes abaixo-->
+					<h3>Idiomas</h3>
+					<div class="language-grid">
+						<div class="language-item">
+							Português nativo
+						</div>
+						<div class="language-item">
+							Inglês fluente
+						</div>
+						<div class="language-item">
+							Javanês avançado
+						</div>
+						<div class="language-item">
+							Quenya avançado
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<hr>
+
+<!-- 
+	Aluno: Sebastião Arlusson Ramos Moura
+	RU: 4951550
+-->
+
+		<section id="portfolio">
+			<h2>Portfólio</h2>
+			<div class="portfolio-grid"><!--Assim como na parte educacional, optei aqui por uma estilização de grid, colocando os elementos lado a lado, por isso uma div englobando os itens-->
+				<!-- Item 1 -->
+				<div class="portfolio-item"> <!--Todos os itens tem a mesma estrutura, vou usar esse como exemplo-->
+					<div class="image-container"><!--Uma div para separar apenas a imagem representativa do site com o link de referência-->
+						<img src="./images/aNota.png" alt="A Nota"><!--Insere imagem-->
+						<a href="https://sebastiaoarmdev.github.io/anota/" target="_blank" class="overlay"><!--Insere link de redirecionamento para o site da imagem-->
+							<span>Visitar Site</span>
+						</a>
+					</div>
+					<p> <!--Parágrafo com título do site e breve descrição dele abaixo da imagem anterior-->
+						<strong>ANota</strong><br>
+						Aplicativo web para registrar a lista de compras ou de consumo desenvolvido utilizando HTML,
+						CSS, Javascript, Bootstrap, Boxicons e PWA.
+					</p>
+				</div>
+				<!-- Item 2 -->
+				<div class="portfolio-item">
+					<div class="image-container">
+						<img src="./images/eotempo.png" alt="E o tempo?">
+						<a href="https://sebastiaoarmdev.github.io/eotempo/" target="_blank" class="overlay">
+							<span>Visitar Site</span>
+						</a>
+					</div>
+					<p>
+						<strong>E o tempo?</strong><br>
+						Aplicativo web para consulta da previsão do tempo consumindo API de terceiros desenvolvido
+						utilizando HTML, CSS, Javascript e Tailwind.
+					</p>
+				</div>
+
+<!-- 
+	Aluno: Sebastião Arlusson Ramos Moura
+	RU: 4951550
+-->
+
+				<!-- Item 3 -->
+				<div class="portfolio-item">
+					<div class="image-container">
+						<img src="./images/hereancaMaldita.png" alt="Herança Maldita">
+						<a href="https://sebastiaoarmdev.github.io/heranca-maldita/" target="_blank" class="overlay">
+							<span>Visitar Site</span>
+						</a>
+					</div>
+					<p>
+						<strong>Herança Maldita</strong><br>
+						Jogo web do tipo <em>Visual Novel</em> de terror desenvolvido utilizando HTML, CSS, Javascript e
+						Monogatari.
+					</p>
+				</div>
+				<!-- Item 4 -->
+				<div class="portfolio-item">
+					<div class="image-container">
+						<img src="./images/catReader.png" alt="CCReader">
+						<a href="https://sebastiaoarmdev.github.io/ccreader/" target="_blank" class="overlay">
+							<span>Visitar Site</span>
+						</a>
+					</div>
+					<p>
+						<strong>CCReader</strong><br>
+						Página web para leitura de perfis da rede social <em>Courious Cat</em> consumindo API externa e
+						desenvolvida utilizando HTML, CSS, Javascript.
+					</p>
+				</div>
+
+<!-- 
+	Aluno: Sebastião Arlusson Ramos Moura
+	RU: 4951550
+-->
+
+				<!-- Item 5 -->
+				<div class="portfolio-item">
+					<div class="image-container">
+						<img src="./images/cassandra.png" alt="Cassandra">
+						<a href="https://sebastiaoarmdev.github.io/cassandra/" target="_blank" class="overlay">
+							<span>Visitar Site</span>
+						</a>
+					</div>
+					<p>
+						<strong>Cassandra</strong><br>
+						Aplicativo web para obtenção de respostas para questões da vida e desenvolvido utilizando HTML,
+						CSS, Javascript e PWA.
+					</p>
+				</div>
+				<!-- Item 6 -->
+				<div class="portfolio-item">
+					<div class="image-container">
+						<img src="./images/beeri.png" alt="Beeri">
+						<a href="https://sebastiaoarmdev.github.io/beeri/" target="_blank" class="overlay">
+							<span>Visitar Site</span>
+						</a>
+					</div>
+					<p>
+						<strong>Beeri</strong><br>
+						Aplicativo web contador de biritas desenvolvido utilizando HTML, CSS, Javascript e PWA.
+					</p>
+				</div>
+			</div>
+		</section>
+		<hr>
+
+<!-- 
+	Aluno: Sebastião Arlusson Ramos Moura
+	RU: 4951550
+-->
+
+		<section id="contact"><!--Por questão de estilização, o formulário de mensagem ficou em uma div e informações em outra-->
+			<div>
+				<h2>Envie uma mensagem</h2> <!--Insere um título para o formulário-->
+				<form action="https://api.staticforms.xyz/submit" method="post"> <!--Cria o formulário que será enviado para a api descrita em action por um método post-->
+					<input type="hidden" name="accessKey" value="d5fdc89d-c528-426c-aa02-40fde27ca668"><!--Adiciona no body do post o atributo acessKey com o valor descrito em value-->
 					<div>
-						<label for="name">Como se chama?</label><br>
-						<input type="text" id="name" name="name" required>
+						<label for="name">Como se chama?</label><br><!--Cria label de identificação de input-->
+						<input type="text" id="name" name="name" required><!--Cria input do tipo texto que vai preencher no body do post o campo name com o valor inserido-->
 					</div>
 					<div>
-						<label for="email">Qual seu e-mail?</label><br>
-						<input type="email" id="email" name="email" required>
+						<label for="email">Qual seu e-mail?</label><br><!--Cria label de identificação de input-->
+						<input type="email" id="email" name="email" required><!--Cria input do tipo texto que vai preencher no body do post o campo email com o valor inserido-->
 					</div>
 					<div>
-						<label for="message">Qual sua mensagem?</label><br>
-						<input type="text" id="message" name="message" required>
+						<label for="message">Qual sua mensagem?</label><br><!--Cria label de identificação de input-->
+						<input type="text" id="message" name="message" required><!--Cria input do tipo texto que vai preencher no body do post o campo message com o valor inserido-->
 					</div>
-					<button type="submit">Enviar</button>
+					<button type="submit">Enviar</button><!--Cria botão de envio de formulário-->
+					<input type="hidden" name="redirectTo" value="https://sebastiaoarmdev.github.io/cv/"><!--Indica para onde deve ser o redirecionamento após o clique do botão de envio-->
 				</form>
-			</section>
-			<hr>
-		</main>
-		
-		<footer>
-			<p>><span class="blinking-text">_</span></p>
-		</footer>
-    </body>
+			</div>
+			<div><!--Textos de informação de contato-->
+				<h3>Informações de contato</h3>
+				<h4>E-mail: sebastiaoarmdev@gmail.com</h4>
+			</div>
+		</section>
+		<hr>
+	</main>
+
+	<footer><!--Adiciona footer na página com créditos-->
+		<p>Desenvolvido por Sebastiao Moura</p>
+		<p>>Hospedado por <a href="https://pages.github.com/" target="_blank">GitHub Pages</a><span class="blinking-text">_</span></p>
+	</footer>
+</body>
+
 </html>

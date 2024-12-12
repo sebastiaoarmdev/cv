@@ -1,32 +1,289 @@
-* {	
+/* 
+	Aluno: Sebastião Arlusson Ramos Moura
+	RU: 4951550
+*/
+/* ADICIONA FONTE */
+* {
 	font-family: Consolas, Monospace;
 }
 
+/* DEFINE PADRÔES GERAIS DO BODY */
 body {
-	margin: 16px;
-	border: 2px solid #888888;
-	padding: 16px;
-	box-shadow: 4px 4px #CCCCCC;
+	margin: 0 5%;
+	margin-top: 0.938rem;
+	padding: 5%;
+	background-color: #ebe7e0;
 }
 
-@keyframes blinker {  
+/* DEFINE PADRÔES GERAIS PARA H2 */
+h2 {
+	text-align: lef;
+	margin-bottom: 20px;
+	color: #333;
+}
+
+/* DEFINE PADRÔES GERAIS PARA A */
+a {
+	text-decoration: none;
+}
+
+/* DEFINE EFEITO DE PISCAR */
+@keyframes blinker {
 	50% {
 		opacity: 0;
 	}
 }
 
 .blinking-text {
-    animation: blinker 1s linear infinite;
+	animation: blinker 1s linear infinite;
 }
 
-hr {
-	width: 50%;
-	text-align: left;
-	margin-left: 0;
-}
 
+/* DEFINE PADRÕES GERAIS DE INPUT */
 input {
 	border: none;
 	border-bottom: 1px solid;
 	margin-bottom: 8px;
+}
+
+/* 
+	Aluno: Sebastião Arlusson Ramos Moura
+	RU: 4951550
+*/
+
+/* DEFINE ESTILIZAÇÃO DE CABEÇALHO AO TOPO DA PÁGINA FIXO */
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	height: 80px;
+	width: 100%;
+	overflow-y: auto;
+	padding: 0 0.938rem;
+	z-index: 9997;
+	transition: all 0.5s ease-in-out;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: #5A9AC9;
+}
+
+/* DEFINE MARGEM USADA PARA O TÍTULO DA PÁGINA NO CABEÇALHO */
+header h1 {
+	margin: 0;
+}
+
+/* --------------------------------------------------- */
+/* DEFINE A ESTILIZAÇÃO DA NAVEGAÇÃO DA PÁGINA AO TOPO NO CABEÇALHO */
+header nav ul {
+	display: flex;
+	list-style: none;
+	margin: 16px;
+	padding: 50px;
+}
+
+header nav ul li {
+	margin-left: 20px;
+}
+
+/* 
+	Aluno: Sebastião Arlusson Ramos Moura
+	RU: 4951550
+*/
+
+header nav ul li a {
+	text-decoration: none;
+	color: #333;
+}
+
+header nav ul {
+	margin-left: auto;
+}
+
+/* ------------------------------------------------------ */
+/* DEFINE MARGEM DO TOPO PARA O CABEÇALHO NÃO ESCONDA CONTEÚDO */
+main {
+	margin-top: 80px;
+}
+
+/* ------------------------------------------------------ */
+/* DEFINIÇÕES DE PADRÕES GERAIS PARA AS SEÇÕES */
+section {
+	font-family: Arial, sans-serif;
+	padding: 20px;
+	background-color: #f9f9f9;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	scroll-margin-top: 80px;
+}
+
+/* ------------------------------------------------------ */
+/* ESTILIZAÇÃO DOS SUBTÍTULOS DA SEÇÃO */
+.academic-section h3 {
+	font-size: 1.5rem;
+	margin-bottom: 20px;
+	color: #007acc;
+	text-align: center;
+}
+
+/* 
+	Aluno: Sebastião Arlusson Ramos Moura
+	RU: 4951550
+*/
+
+/* ------------------------------------------------------ */
+/* ESTILIZAÇÃO DOS ITENS DA FORMAÇÃO */
+.education-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 20px;
+}
+
+.education-item {
+	text-align: center;
+	background-color: #c6d4e1;
+	color: #0f132e;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.education-item:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.education-item p {
+	margin: 0;
+	font-size: 1rem;
+}
+
+/* ------------------------------------------------------ */
+/* ESTILIZAÇÃO DOS ITENS DOS IDIOMAS */
+.language-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	gap: 20px;
+}
+
+/* 
+	Aluno: Sebastião Arlusson Ramos Moura
+	RU: 4951550
+*/
+
+.language-item {
+	background-color: #f0f0f0;
+	color: #333;
+	padding: 10px 15px;
+	border-radius: 8px;
+	text-align: center;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	font-size: 1rem;
+}
+
+/* ------------------------------------------------------ */
+/* ESTILIZAÇÃO GERAL DO PORTIFÓLIO */
+#portfolio {
+	font-family: Arial, sans-serif;
+	padding: 20px;
+	background-color: #f9f9f9;
+	border-radius: 8px;
+}
+
+/* ------------------------------------------------------ */
+/* eSTILIZAÇÃO DOS ITENS DO PORTIFÓLIO */
+.portfolio-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 20px;
+}
+
+.portfolio-item {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.portfolio-item p {
+	margin-top: 10px;
+	color: #333;
+}
+
+/* 
+	Aluno: Sebastião Arlusson Ramos Moura
+	RU: 4951550
+*/
+
+.image-container {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 8px;
+	max-width: 300px;
+	height: auto;
+	aspect-ratio: 3 / 2;
+	object-fit: cover;
+	display: block;
+	border-radius: 8px;
+}
+
+.image-container img {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 8px;
+}
+
+.image-container .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	text-decoration: none;
+	transition: opacity 0.3s ease;
+	border-radius: 8px;
+}
+
+.image-container .overlay:hover {
+	opacity: 1;
+}
+
+/* 
+	Aluno: Sebastião Arlusson Ramos Moura
+	RU: 4951550
+*/
+
+.image-container .overlay span {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+/* ------------------------------------------------------ */
+/* ESTILIZAÇÃO DA SEÇÃO DE CONTATO */
+#contact {
+	display: flex;
+	gap: 20px;
+	align-items: flex-start;
+}
+
+#contact div {
+	flex: 1;
+}
+
+#contact form,
+#contact div {
+	border: 1px solid #ccc;
+	padding: 20px;
+	border-radius: 8px;
 }
